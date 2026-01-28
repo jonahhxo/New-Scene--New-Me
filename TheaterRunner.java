@@ -16,7 +16,7 @@ public class TheaterRunner {
     lastYear.drawScene();
     thisYear.drawScene();
 
-    Theater.playScenes(lastYear, thisYear);
+    Theater.playScenes(lastYear, thisYear); // Method to play both scenes on the theater
     
   }
 }

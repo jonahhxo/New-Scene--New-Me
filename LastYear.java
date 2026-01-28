@@ -9,12 +9,12 @@ The cover image for LastYear is also set as a png file
  */
 
 public class LastYear extends Scene {
-  private String[] captions;
-  private String[] images;
-  private String startImage;
+  private String[] captions; // Array that holds the captions
+  private String[] images; // Array that holds the images that appear
+  private String startImage; // String variable that represents the start / cover image
   
   public LastYear() {
-captions = new String[] {
+captions = new String[] { // Captions for the Images that appear (captions appear in the order of the images in data1.txt)
   "At District Convention",
   "In Florida for Key Club",
   "Flying home from Florida",

@@ -9,12 +9,12 @@ The cover image for ThisYear is also set as a png file.
  */
 
 public class ThisYear extends Scene {
-  private String[] captions;
-  private String[] images;
-  private String startImage;
+  private String[] captions; // Array that holds the captions (position sensitive)
+  private String[] images; // Array that holds the images, images are located in data2.txt
+  private String startImage; // String variable that holds the startImage/Cover (very first picture)
   
   public ThisYear() {
-captions = new String[] {
+captions = new String[] { // Captions Array Initialized
   "Peace",
   "Love",
   "Fun",
