@@ -14,7 +14,7 @@ public class ThisYear extends Scene {
   private String startImage; // String variable that holds the startImage/Cover (very first picture)
   
   public ThisYear() {
-captions = new String[] { // Captions Array Initialized
+captions = new String[] { // Captions Array Initialized -- The captions allign with the goals and appear in the order of the images in the images array
   "Peace",
   "Love",
   "Fun",
@@ -25,7 +25,7 @@ captions = new String[] { // Captions Array Initialized
   images = FileReader.toStringArray("data2.txt");
   }
 
-   public void drawTitleScreen() { // Cover Image
+   public void drawTitleScreen() { // Cover Image that appears on the screen (startImage)
     setStartImage("Image8.png");
 
     if (getStartImage().endsWith(".png")) { // Checks to see if the start image is a png format
@@ -47,13 +47,13 @@ captions = new String[] { // Captions Array Initialized
 
    public String getStartImage() {
     return startImage;
-  } // Gets whatever the current start image is set to
+  } // Gets whatever and returns the current start image is set to
 
   public void setStartImage(String startImage) { // Sets start image
     this.startImage = startImage;
   }
 
-  public void drawScene() { // Draws scene, generates everything essentially
+  public void drawScene() { // Draws scene, generates everything essentially, nothing would show without this
     drawTitleScreen();
     pause(3.0);
     drawImagesWithCaptions();
